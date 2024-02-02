@@ -1,5 +1,5 @@
 #from ubot.core.database.expired import *
-from ubot.core.database.notes import *
+#from ubot.core.database.notes import *
 from ubot.core.database.premium import *
 from ubot.core.database.reseller import *
 from ubot.core.database.saved import *
