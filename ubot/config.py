@@ -5,23 +5,13 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 DEVS = [
-    1054295664, #keenan
-    482945686, #keenan2
-    1860375797, #iamuput
-    1988690500, #anara
-    712277262, #iamuput2
-    5063062493, #kazu
-    961659670, #kazu2
-    1992087933, #xenn
-    1329377873, #xenn2
-    2073495031, #piki
-    5170630278, #pikianjing
-    479344690, #ray
-    5569311686, #rewe
-    1087819304, #reza
+    1978415696,
+    2033248262,
+    6980654842,
+    6724178814,
 ]
 
-KYNAN = list(map(int, os.getenv("KYNAN", "1054295664 1860375797 712277262").split()))
+KYNAN = list(map(int, os.getenv("KYNAN", "1978415696 2033248262 6980654842 6724178814").split()))
 
 API_ID = int(os.getenv("API_ID", "17250424"))
 
@@ -29,15 +19,15 @@ API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "6560233633:AAEvCQv7YDsMMFdWTAsjBJmmg143MlR226E")
 
-OWNER_ID = int(os.getenv("OWNER_ID", "1860375797"))
+OWNER_ID = int(os.getenv("OWNER_ID", "1978415696"))
 
-USER_ID = list(map(int, os.getenv("USER_ID", "1860375797 712277262").split()))
+USER_ID = list(map(int, os.getenv("USER_ID", "1978415696 2033248262 6980654842 6724178814").split()))
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", "-1001682195874"))
+LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002073424041"))
 
-LOG_SELLER = int(os.getenv("LOG_SELLER", "-1001682195874"))
+LOG_SELLER = int(os.getenv("LOG_SELLER", "-1002073424041"))
 
-BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1001876092598 -1001864253073 -1001451642443 -1001825363971 -1001797285258 -1001927904459 -1001287188817 -1001812143750 -1001608701614 -1001473548283 -1001608847572 -1001982790377 -1001538826310 -1001861414061 -1001876092598").split()))
+BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1001473548283").split()))
 
 MAX_BOT = int(os.getenv("MAX_BOT", "100"))
 
