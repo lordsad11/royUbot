@@ -135,7 +135,7 @@ ubot = Ubot(
     name="ubot",
     api_id=API_ID,
     api_hash=API_HASH,
-    device_model="v1Uputt 🔥")
+    device_model="sharingprembot 🔥")
 
 class Bot(Client):
     def __init__(self, **kwargs):
