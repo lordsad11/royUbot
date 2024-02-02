@@ -192,11 +192,11 @@ async def bikin_ubot(client, callback_query):
     await bot_msg.edit(text_done)
     #await install_my_peer(new_client)
     try:
-        await new_client.join_chat("kynansupport")
-        await new_client.join_chat("UputtSupport")
-        await new_client.join_chat("flukosaa")
-        await new_client.join_chat("KazuSupportGrp")
-        await new_client.join_chat("PesulapTelegram")
+        await new_client.join_chat("durov")
+        await new_client.join_chat("Lunatic0de")
+        await new_client.join_chat("SharingUserbot")
+        await new_client.join_chat("durovschat")
+        await new_client.join_chat("UltroidSupportChat")
     except UserAlreadyParticipant:
         pass
     return await bot.send_message(
