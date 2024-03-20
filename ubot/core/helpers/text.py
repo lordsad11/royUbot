@@ -36,7 +36,7 @@ Jika Kamu Sudah Melakukan Pembayaran Silakan Klik Tombol Buat Userbot.</b>
 
 <b>💳 Metode Pembayaran:</b>
  <b>├──• Dana </b>
- <b>├─• <code>082288195789</code></b>
+ <b>├─• <code>085775050092</code></b>
 
 
 <b>🔖 Total Harga: ʀᴘ {total}.000</b>
@@ -66,7 +66,7 @@ Anda tidak lagi berhak atas pengembalian dana.
 🆘 Dukungan
 Untuk mendapatkan dukungan, Anda dapat:
 • Menghubungi admin dibawah ini
-• Support @UputtSupport di Telegram
+• Support @AIUSUPPORT di Telegram
 ⚠️ JANGAN menghubungi Dukungan Telegram atau Dukungan Bot untuk meminta dukungan terkait pembayaran yang dilakukan di bot ini.
 👉🏻 Tekan tombol Lanjutkan untuk menyatakan bahwa Anda telah
 membaca dan menerima ketentuan ini dan melanjutkan
