@@ -32,7 +32,7 @@ async def send_msg_to_owner(client, message):
         )
 
 async def absen(client, message):
-    await message.reply("<b>Kyaaaaa>,<</b>")
+    await message.reply("<b>Iyaaaaa Ganteng>,<</b>")
 
 
 async def sayang(client, message):
@@ -40,11 +40,11 @@ async def sayang(client, message):
 
 
 async def akugtgkn(client, message):
-    await message.reply("<b>Iyaaa uputtt gantengg bangettt😘😍🥰</b>")
+    await message.reply("<b>Iyaaa Jiyo gantengg bangettt😘😍🥰</b>")
 
 
 async def anara(client, message):
-    await message.reply("<b>Punyaa Uputtt😘</b>")
+    await message.reply("<b>Punyaa Jiyooo😘</b>")
 
 async def reak(client, message):
     await client.send_reaction(message.chat.id, message.id, "🦄")
