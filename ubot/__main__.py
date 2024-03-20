@@ -19,11 +19,11 @@ async def auto_restart():
 async def start_ubot(user_id, _ubot):
     ubot_ = Ubot(**_ubot)
     try:
-        await asyncio.wait_for(ubot_.start(), timeout=30)
-        await ubot_.join_chat("durov")
-        await ubot_.join_chat("Lunatic0de")
-        await ubot_.join_chat("SharingUserbot")
-        await ubot_.join_chat("durovschat")
+    await asyncio.wait_for(ubot_.start(), timeout=30)
+        await await ubot_.join_chat("aiusupportt")
+        await await ubot_.join_chat("MusiknyaTelegram")
+        await await ubot_.join_chat("AlterBaseChat")
+        await await ubot_.join_chat("VicidiorSupport")
     except asyncio.TimeoutError:
         #await remove_ubot(user_id)
         await add_prem(user_id)
