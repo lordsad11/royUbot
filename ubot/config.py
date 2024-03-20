@@ -6,22 +6,19 @@ load_dotenv(".env")
 
 DEVS = [
     1978415696,
-    2033248262,
-    6980654842,
-    6724178814,
 ]
 
-KYNAN = list(map(int, os.getenv("KYNAN", "1978415696 2033248262 6980654842 6724178814").split()))
+KYNAN = list(map(int, os.getenv("KYNAN", "1978415696").split()))
 
 API_ID = int(os.getenv("API_ID", "17250424"))
 
 API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "6560233633:AAEvCQv7YDsMMFdWTAsjBJmmg143MlR226E")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6715085237:AAG_e-Wz-4Ch4YqkNgVF5YGm2xe69NlrQeI")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "1978415696"))
 
-USER_ID = list(map(int, os.getenv("USER_ID", "1978415696 2033248262 6980654842 6724178814").split()))
+USER_ID = list(map(int, os.getenv("USER_ID", "1978415696").split()))
 
 LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002073424041"))
 
@@ -40,5 +37,5 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://uputra:uputra@cluster0.n94m27s.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://vewonon211:vewonon211@joysoy.kokbtub.mongodb.net/?retryWrites=true&w=majority",
 )
