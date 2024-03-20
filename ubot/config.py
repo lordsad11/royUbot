@@ -14,13 +14,13 @@ API_ID = int(os.getenv("API_ID", "17250424"))
 
 API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "6715085237:AAG_e-Wz-4Ch4YqkNgVF5YGm2xe69NlrQeI")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7078858216:AAHTyGjfPsaoo5oclMqChGmNojUX0yyQXgY")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "1978415696"))
 
 USER_ID = list(map(int, os.getenv("USER_ID", "1978415696").split()))
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002122323679"))
+LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002073087511"))
 
 LOG_SELLER = int(os.getenv("LOG_SELLER", "-1002073424041"))
 
