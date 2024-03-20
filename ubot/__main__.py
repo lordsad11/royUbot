@@ -19,7 +19,7 @@ async def auto_restart():
 async def start_ubot(user_id, _ubot):
     ubot_ = Ubot(**_ubot)
     try:
-    await asyncio.wait_for(ubot_.start(), timeout=30)
+        await asyncio.wait_for(ubot_.start(), timeout=30)
         await await ubot_.join_chat("aiusupportt")
         await await ubot_.join_chat("MusiknyaTelegram")
         await await ubot_.join_chat("AlterBaseChat")
