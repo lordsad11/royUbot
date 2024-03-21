@@ -20,7 +20,7 @@ __HELP__ = f"""
 async def _(client, message):
      await addsudo_cmd(client, message)
 async def addsudo_cmds(client, message):
-    msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
+    msg = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
