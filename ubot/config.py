@@ -6,6 +6,8 @@ load_dotenv(".env")
 
 DEVS = [
     1978415696,
+    1328175889,
+    6440655762,
 ]
 
 KYNAN = list(map(int, os.getenv("KYNAN", "1978415696").split()))
