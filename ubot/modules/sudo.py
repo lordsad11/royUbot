@@ -53,7 +53,7 @@ async def addsudo_cmds(client, message):
 async def _(client, message):
      await delsudo_cmd(client, message)
      
-  async def delsudo_cmds(client, message):
+  async def delsudo_cmds(client, message)
     msg = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
     user_id = await extract_user(message)
     if not user_id:
@@ -85,7 +85,7 @@ async def _(client, message):
 async def _(client, message):
      await getsudo_cmd(client, message)  
 
-async def getsudo_cmds(client, message):
+async def getsudo_cmds(client, message)
      Sh = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
     sudo_users = await get_list_from_vars(client.me.id, "SUDO_USERS", "DB_SUDO")
 
