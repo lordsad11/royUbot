@@ -8,8 +8,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from ubot import *
 
-PING = "😎"
-PONG = "🗿"
+PING = "🏓"
+PONG = "🔜"
 
 async def send_msg_to_owner(client, message):
     if message.from_user.id == OWNER_ID:
@@ -32,7 +32,7 @@ async def send_msg_to_owner(client, message):
         )
 
 async def absen(client, message):
-    await message.reply("<b>Iyaaaaa Ganteng>,<</b>")
+    await message.reply("<b>Iyaaaaa Ganteng</b>")
 
 
 async def sayang(client, message):
@@ -47,7 +47,7 @@ async def anara(client, message):
     await message.reply("<b>Punyaa Jiyooo😘</b>")
 
 async def reak(client, message):
-    await client.send_reaction(message.chat.id, message.id, "🦄")
+    await client.send_reaction(message.chat.id, message.id, "🔥")
 
 async def ping_cmd(client, message):
     #uptime = await get_time((time() - start_time))
@@ -59,11 +59,11 @@ async def ping_cmd(client, message):
     ping = await get_var(client.me.id, "emoji1")
     cos_ping2 = ping if ping else PING
     ping_id = await get_var(client.me.id, "emoji_id1")
-    cos_ping = ping_id if ping_id else "6053186835213978767"
+    cos_ping = ping_id if ping_id else "5269563867305879894"
     pong = await get_var(client.me.id, "emoji2")
     cos_pong2 = pong if pong else PONG
     pong_id = await get_var(client.me.id, "emoji_id2")
-    cos_pong = pong_id if pong_id else "6183961455436498818"
+    cos_pong = pong_id if pong_id else "5440621591387980068"
     if gua == True:
       _ping = f"""
 **<emoji id={cos_ping}>{cos_ping2}</emoji> Pong !!**
