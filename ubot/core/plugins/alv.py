@@ -41,9 +41,9 @@ async def alive_query(client, inline_query):
             if my.me.id in DEVS:
                 status = "<b>Premium</b> <code>[Owner]</code>"
             elif my.me.id in await get_seles():
-                status = "<b>Premium</b> <code>[Owner]</code>"
+                status = "<b>Premium</b> <code>[Admin]</code>"
             else:
-                status = "<b>Premium</b> <code>[Owner]</code>"
+                status = "<b>Premium</b> <code>[scammer]</code>"
             button = Button.alive(get_id)
             start = datetime.now()
             await my.invoke(Ping(ping_id=0))
@@ -56,7 +56,7 @@ async def alive_query(client, inline_query):
             else:
                 antipm = "enable"
             msg = f"""
-<b>Sharing-Userbot</b>
+<b>ᴀɪᴜ ᴜʙᴏᴛ</b>
     <b>status:</b> {status} 
       <b>dc_id:</b> <code>{my.me.dc_id}</code>
       <b>ping_dc:</b> <code>{str(ping).replace('.', ',')} ms</code>
