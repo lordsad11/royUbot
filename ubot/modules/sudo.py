@@ -1,6 +1,10 @@
-from ubot import *
+"""
+yang hapus credits pantatnya bisulan
+create by: https://t.me/NorSodikin 
+"""
 
 
+from PyroUbot import *
 
 __MODULE__ = "sudo"
 __HELP__ = f"""
@@ -15,13 +19,11 @@ __HELP__ = f"""
   <b>• ᴘᴇʀɪɴᴛᴀʜ:</b> <code>getsudo</code>
   <b>• ᴘᴇɴᴊᴇʟᴀsᴀɴ:</b> ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴅᴀғᴛᴀʀ sᴜᴅᴏ
 """
- 
-@PY.UBOT("addsudo")
-async def _(client, message):
-     await addsudo_cmd(client, message)
 
-async def addsudo_cmds(client, message):
-    msg = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
+@PY.UBOT("addsudo")
+@PY.TOP_CMD
+async def _(client, message):
+    msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     user_id = await extract_user(message)
     if not user_id:
         return await msg.edit(
@@ -47,14 +49,12 @@ async def addsudo_cmds(client, message):
         )
     except Exception as error:
         return await msg.edit(error)
-     
-     
+
+
 @PY.UBOT("delsudo")
+@PY.TOP_CMD
 async def _(client, message):
-     await delsudo_cmd(client, message)
-     
-  async def delsudo_cmds(client, message):
-    msg = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
+    msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     user_id = await extract_user(message)
     if not user_id:
         return await message.reply(
@@ -79,14 +79,13 @@ async def _(client, message):
             f"<b>❌ [{user.first_name} {user.last_name or ''}](tg://user?id={user.id}) ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀғᴛᴀʀ sᴜᴅᴏ</b>"
         )
     except Exception as error:
-        return await msg.edit(error)    
-        
-@PY.UBOT("getsudo")
-async def _(client, message):
-     await getsudo_cmd(client, message)  
+        return await msg.edit(error)
 
-async def getsudo_cmds(client, message):
-     Sh = await message.reply("sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...")
+
+@PY.UBOT("getsudo")
+@PY.TOP_CMD
+async def _(client, message):
+    Sh = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     sudo_users = await get_list_from_vars(client.me.id, "SUDO_USERS", "DB_SUDO")
 
     if not sudo_users:
@@ -111,4 +110,4 @@ async def getsudo_cmds(client, message):
         return await Sh.edit(response)
     else:
         return await Sh.edit("<b>ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀғᴛᴀʀ sᴜᴅᴏ sᴀᴀᴛ ɪɴɪ</b>")
-        
+      
