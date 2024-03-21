@@ -1,7 +1,4 @@
 from ubot import *
-from pyrogram import Client, errors, filters
-from pyrogram.types import ChatPermissions, Message
- 
  
 @PY.UBOT("addsudo")
 async def _(client, message):
