@@ -3,7 +3,7 @@ from pyrogram import Client, errors, filters
 from pyrogram.types import ChatPermissions, Message
  
  
- __MODULE__ = "sudo"
+ __MODULE__ = "Sudo"
 __HELP__ = f"""
 <b>『 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴜᴅᴏ 』</b>
 
