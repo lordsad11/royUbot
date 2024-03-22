@@ -10,7 +10,7 @@ from pyrogram.types import *
 from pyromod import listen
 from os import execvp
 from sys import executable
-from config import SUDO_USERS, OWNER_ID
+from ubot import SUDO_USERS, OWNER_ID
 #from pytgcalls import PyTgCalls
 
 from ubot.config import *
