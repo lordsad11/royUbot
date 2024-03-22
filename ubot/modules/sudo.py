@@ -1,7 +1,4 @@
-from ubot import SUDO_USER
-from config import OWNER_ID
-
-
+from config import OWNER_ID, SUDO_USER, USER_ID
 from ubot import *
 
 __MODULE__ = "sudo"
