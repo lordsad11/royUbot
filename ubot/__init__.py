@@ -10,14 +10,16 @@ from pyrogram.types import *
 from pyromod import listen
 from os import execvp
 from sys import executable
-
+from config import SUDO_USERS, OWNER_ID
 #from pytgcalls import PyTgCalls
 
 from ubot.config import *
 
 loop = asyncio.get_event_loop_policy()
 event_loop = loop.get_event_loop()
+SUDO_USER = SUDO_USERS
 
+SUDO_USERS.append(OWNER_ID)
 aiosession = ClientSession()
 
 def gas():
