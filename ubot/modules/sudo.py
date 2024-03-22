@@ -1,5 +1,5 @@
 from ubot import SUDO_USER
-from config import OWNER_ID, DB_SUDO
+from ubot import OWNER_ID, DB_SUDO
 from ubot import SUDO_USERS, USER_ID
 from ubot import *
 
