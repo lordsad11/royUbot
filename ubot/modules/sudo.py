@@ -1,7 +1,5 @@
-"""
-yang hapus credits pantatnya bisulan
-create by: https://t.me/NorSodikin 
-"""
+from ubot import SUDO_USER
+from config import OWNER_ID
 
 
 from ubot import *
