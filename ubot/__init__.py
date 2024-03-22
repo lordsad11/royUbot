@@ -14,7 +14,7 @@ from ubot import config
 #from pytgcalls import PyTgCalls
 
 from ubot.config import *
-from ubot.config import SUDO_USER, OWNER_ID, DB_SUDO
+#from ubot.config import SUDO_USER, OWNER_ID, DB_SUDO
 
 loop = asyncio.get_event_loop_policy()
 event_loop = loop.get_event_loop()
