@@ -85,16 +85,3 @@ async def gmute_user(client: Client, message: Message):
         await ex.edit(f"**ERROR:** `{e}`")
         return
 
-
-
-add_command_help(
-    "sudos",
-    [
-        [
-            "addsudo <reply/username/userid>",
-            "Add any user as Sudo (Use This At your own risk maybe sudo users can control ur account).",
-        ],
-        ["rmsudo <reply/username/userid>", "Remove Sudo access."],
-        ["sudolist", "Displays the Sudo List."],
-    ],
-          )
