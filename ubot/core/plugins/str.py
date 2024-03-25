@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from ubot import *
 
 PING = "🏓"
-PONG = "🔜"
+PONG = "👑"
 
 async def send_msg_to_owner(client, message):
     if message.from_user.id == OWNER_ID:
@@ -37,6 +37,10 @@ async def absen(client, message):
 
 async def sayang(client, message):
     await message.reply("<b>Iyaaa sayanggg kenapaa?🥰</b>")
+
+
+async def babu(client, message):
+    await message.reply("<b>Iyaaa BOSSQUE 😎</b>")
 
 
 async def akugtgkn(client, message):
