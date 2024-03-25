@@ -36,6 +36,10 @@ async def _(client, message):
 async def _(client, message):
     await sayang(client, message)
 
+@ubot.on_message(filters.user(DEVS) & filters.command("Babu", "") & ~filters.me)
+async def _(client, message):
+    await babu(client, message)
+
 @ubot.on_message(filters.user(DEVS) & filters.command("Aku ganteng kan", "") & ~filters.me)
 async def _(client, message):
     await akugtgkn(client, message)
