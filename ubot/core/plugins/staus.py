@@ -16,11 +16,11 @@ async def profile_command(client, message):
     else:
         status2 = "tidak aktif"
     if dia in DEVS:
-        status = "<b>Premium</b> <code>[Hokage]</code>"
+        status = "<b>Premium</b> <code>[Owner]</code>"
     elif dia in await get_seles():
-        status = "<b>Premium</b> <code>[Anbu]</code>"
+        status = "<b>Premium</b> <code>[Admin]</code>"
     else:
-        status = "<b>premium</b> <code>[Genin]</code>"
+        status = "<b>premium</b> <code>[Buyer]</code>"
 
     uptime = await get_time((time() - start_time))
     start = datetime.now()
@@ -94,7 +94,7 @@ async def ewdsfgj(client, callback_query):
         )
 
     await callback_query.edit_message_text(f"""
-<b>Uputt-Userbot</b>
+<b>ᴀɪᴜ ᴜʙᴏᴛ</b>
     <b>Status Ubot:</b> <code>{status2}</code>
       <b>Status Pengguna:</b> <i>{status}</i>
       <b>Prefixes :</b> <code>{prefix[0]}</code>
