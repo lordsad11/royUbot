@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 DEVS = [
-    1118436634,
+    92745302,
     6440655762,
     1835537207,
     5473861895,
