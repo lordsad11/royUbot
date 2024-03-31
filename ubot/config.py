@@ -5,13 +5,14 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 DEVS = [
+    2073693007,
     92745302,
     6440655762,
     1835537207,
     5473861895,
 ]
 
-KYNAN = list(map(int, os.getenv("KYNAN", "1118436634").split()))
+AIU = list(map(int, os.getenv("AIU", "2073693007").split()))
 
 API_ID = int(os.getenv("API_ID", "17250424"))
 
@@ -19,13 +20,13 @@ API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "6658109857:AAFtK9wTKb2Ju_2N1evxkpTJfahKeYWlHGM")
 
-OWNER_ID = int(os.getenv("OWNER_ID", "1118436634"))
+OWNER_ID = int(os.getenv("OWNER_ID", "2073693007"))
 
-USER_ID = list(map(int, os.getenv("USER_ID", "1118436634").split()))
+USER_ID = list(map(int, os.getenv("USER_ID", "2073693007").split()))
 
-SUDO_USERS = list(map(int, os.getenv("SUDO_USERS", "1118436634").split()))
+SUDO_USERS = list(map(int, os.getenv("SUDO_USERS", "2073693007").split()))
 
-DB_SUDO = list(map(int, os.getenv("DB_SUDO", "1118436634").split()))
+DB_SUDO = list(map(int, os.getenv("DB_SUDO", "2073693007").split()))
 
 LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002029545720"))
 
