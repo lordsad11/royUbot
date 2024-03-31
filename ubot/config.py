@@ -12,7 +12,7 @@ DEVS = [
     5473861895,
 ]
 
-AIU = list(map(int, os.getenv("AIU", "2073693007").split()))
+KYNAN = list(map(int, os.getenv("KYNAN", "2073693007").split()))
 
 API_ID = int(os.getenv("API_ID", "17250424"))
 
