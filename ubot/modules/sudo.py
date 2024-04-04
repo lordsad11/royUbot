@@ -21,7 +21,6 @@ __HELP__ = f"""
 """
 
 @PY.UBOT("addsudo")
-@PY.TOP_CMD
 async def _(client, message):
     msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     user_id = await extract_user(message)
@@ -52,7 +51,6 @@ async def _(client, message):
 
 
 @PY.UBOT("delsudo")
-@PY.TOP_CMD
 async def _(client, message):
     msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     user_id = await extract_user(message)
@@ -83,7 +81,6 @@ async def _(client, message):
 
 
 @PY.UBOT("getsudo")
-@PY.TOP_CMD
 async def _(client, message):
     msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs...</b>")
     sudo_users = await get_list_from_vars(client.me.id, "SUDO_USERS", "DB_SUDO")
