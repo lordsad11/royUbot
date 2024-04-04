@@ -2,37 +2,37 @@ __MODULE__ = "animasi"
 __HELP__ = f"""
 ✘ Bantuan Untuk Animasi
 
-๏ Perintah:  <code>{cmd}dino or babi</code>
+๏ Perintah:  <code>dino or babi</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah:  <code>{cmd}hack or hug</code>
+๏ Perintah:  <code>hack or hug</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah: <code>{cmd}santet or gabut</code>
+๏ Perintah: <code>santet or gabut</code>
 ◉ Penjelasan: Coba sendiri.
 
-๏ Perintah:  <code>{cmd}bomb or brain</code>
+๏ Perintah:  <code>bomb or brain</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah: <code>{cmd}sayang or kontol</code>
+๏ Perintah: <code>sayang or kontol</code>
 ◉ Penjelasan: Coba sendiri.
 
-๏ Perintah:  <code>{cmd}penis or hmm</code>
+๏ Perintah:  <code>penis or hmm</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah:  <code>{cmd}tembak or bundir</code>
+๏ Perintah:  <code>tembak or bundir</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah: <code>{cmd} helikopter or y</code>
+๏ Perintah: <code> helikopter or y</code>
 ◉ Penjelasan: Coba sendiri.
 
-๏ Perintah:  <code>{cmd}love or awk</code>
+๏ Perintah:  <code>love or awk</code>
 ◉ Penjelasan:  Coba sendiri.
 
-๏ Perintah: <code>{cmd}nah or ajg</code>
+๏ Perintah: <code>nah or ajg</code>
 ◉ Penjelasan: Coba sendiri.
 
-๏ Perintah: <code>{cmd}loveyou or love</code>
+๏ Perintah: <code>loveyou or love</code>
 ◉ Penjelasan: Coba sendiri.
 """
 
