@@ -134,7 +134,7 @@ async def phase4(message):
         await asyncio.sleep(SLEEP)
 
 
-@bots.on_message(filters.me & filters.command("love", cmd))
+@ubot.on_message(filters.me & filters.command("love", cmd))
 async def love(client: Client, message: Message):
     if message.forward_from:
         return
@@ -162,7 +162,7 @@ async def love(client: Client, message: Message):
         await message.edit(animation_chars[i % 14])
 
 
-@bots.on_message(
+@ubot.on_message(
     filters.me & (filters.command(["loveyou"], cmd) | filters.regex("^loveyou "))
 )
 async def _(client: Client, message: Message):
@@ -171,7 +171,7 @@ async def _(client: Client, message: Message):
     await eor(message, reply_text)
 
 
-@bots.on_message(filters.me & filters.command("wink", cmd))
+@ubot.on_message(filters.me & filters.command("wink", cmd))
 async def wink(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/wink"
     r = requests.get(url=hmm_s).json()
@@ -180,7 +180,7 @@ async def wink(client: Client, message: Message):
     await message.delete()
 
 
-@bots.on_message(filters.me & filters.command("hug", cmd))
+@ubot.on_message(filters.me & filters.command("hug", cmd))
 async def hug(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/hug"
     r = requests.get(url=hmm_s).json()
@@ -189,7 +189,7 @@ async def hug(client: Client, message: Message):
     await message.delete()
 
 
-@bots.on_message(filters.me & filters.command("pat", cmd))
+@ubot.on_message(filters.me & filters.command("pat", cmd))
 async def pat(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/pat"
     r = requests.get(url=hmm_s).json()
@@ -198,7 +198,7 @@ async def pat(client: Client, message: Message):
     await message.delete()
 
 
-@bots.on_message(filters.me & filters.command("pikachu", cmd))
+@ubot.on_message(filters.me & filters.command("pikachu", cmd))
 async def pikachu(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/img/pikachu"
     r = requests.get(url=hmm_s).json()
@@ -213,7 +213,7 @@ async def pikachu(client: Client, message: Message):
     await message.delete()
 
 
-@bots.on_message(filters.me & filters.command("hmm", cmd))
+@ubot.on_message(filters.me & filters.command("hmm", cmd))
 async def hello_world(client: Client, message: Message):
     mg = await eor(
         message,
@@ -221,7 +221,7 @@ async def hello_world(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & (filters.command(["ahh"], cmd) | filters.regex("^ahh ")))
+@ubot.on_message(filters.me & (filters.command(["ahh"], cmd) | filters.regex("^ahh ")))
 async def hello_world(client: Client, message: Message):
     mg = await eor(message, "ahh")
     await asyncio.sleep(0.2)
@@ -240,7 +240,7 @@ async def hello_world(client: Client, message: Message):
     await mg.edit("aaahhhhhhhh")
 
 
-@bots.on_message(filters.me & filters.command("brain", cmd))
+@ubot.on_message(filters.me & filters.command("brain", cmd))
 async def pijtau(client: Client, message: Message):
     if message.forward_from:
         return
@@ -268,7 +268,7 @@ async def pijtau(client: Client, message: Message):
         await message.edit(animation_chars[i % 14])
 
 
-@bots.on_message(filters.me & filters.command("bomb", cmd))
+@ubot.on_message(filters.me & filters.command("bomb", cmd))
 async def gahite(client: Client, message: Message):
     if message.forward_from:
         return
@@ -294,7 +294,7 @@ async def gahite(client: Client, message: Message):
     await asyncio.sleep(2)
 
 
-@bots.on_message(filters.me & filters.command("call", cmd))
+@ubot.on_message(filters.me & filters.command("call", cmd))
 async def hajqag(client: Client, message: Message):
     if message.forward_from:
         return
@@ -326,7 +326,7 @@ async def hajqag(client: Client, message: Message):
         await message.edit(animation_chars[i % 18])
 
 
-@bots.on_message(filters.me & filters.command("kill", cmd))
+@ubot.on_message(filters.me & filters.command("kill", cmd))
 async def gahah(client: Client, message: Message):
     if message.forward_from:
         return
@@ -352,7 +352,7 @@ async def gahah(client: Client, message: Message):
         await message.edit(animation_chars[i % 12])
 
 
-@bots.on_message(filters.me & filters.command("wtf", cmd))
+@ubot.on_message(filters.me & filters.command("wtf", cmd))
 async def gagahkah(client: Client, message: Message):
     if message.forward_from:
         return
@@ -371,7 +371,7 @@ async def gagahkah(client: Client, message: Message):
         await message.edit(animation_chars[i % 5])
 
 
-@bots.on_message(filters.me & filters.command("ding", cmd))
+@ubot.on_message(filters.me & filters.command("ding", cmd))
 async def gkahgagw(client: Client, message: Message):
     animation_interval = 0.3
     animation_ttl = range(0, 30)
@@ -396,7 +396,7 @@ async def gkahgagw(client: Client, message: Message):
         await message.edit(animation_chars[i % 10])
 
 
-@bots.on_message(filters.me & filters.command("hypo", cmd))
+@ubot.on_message(filters.me & filters.command("hypo", cmd))
 async def okihakga(client: Client, message: Message):
     if message.forward_from:
         return
@@ -425,7 +425,7 @@ async def okihakga(client: Client, message: Message):
         await message.edit(animation_chars[i % 15])
 
 
-@bots.on_message(filters.command(["gangsta", "gang", "gangstar"], cmd) & filters.me)
+@ubot.on_message(filters.command(["gangsta", "gang", "gangstar"], cmd) & filters.me)
 async def gajjajay(client: Client, message: Message):
     await message.edit("EVERyBOdy")
     await asyncio.sleep(0.3)
@@ -444,7 +444,7 @@ async def gajjajay(client: Client, message: Message):
     await message.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥🔥🔥")
 
 
-@bots.on_message(filters.me & filters.command("charging", cmd))
+@ubot.on_message(filters.me & filters.command("charging", cmd))
 async def timer_blankx(client: Client, message: Message):
     txt = (
         message.text[10:]
@@ -463,7 +463,7 @@ async def timer_blankx(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("kocok", cmd))
+@ubot.on_message(filters.me & filters.command("kocok", cmd))
 async def kocok(client: Client, message: Message):
     e = await eor(message, "8✊===D")
     await e.edit("8=✊==D")
@@ -497,7 +497,7 @@ async def kocok(client: Client, message: Message):
     await e.edit("😭😭😭😭")
 
 
-@bots.on_message(filters.me & filters.command("hack", cmd))
+@ubot.on_message(filters.me & filters.command("hack", cmd))
 async def hak(client: Client, message: Message):
     await message.edit_text("Looking for WhatsApp databases in targeted person...")
     await asyncio.sleep(2)
@@ -556,7 +556,7 @@ async def hak(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.command(["kontol", "kntl"], "") & filters.me)
+@ubot.on_message(filters.command(["kontol", "kntl"], "") & filters.me)
 async def kontol(client: Client, message: Message):
     emoji = get_text(message)
     kontol = MEMES.GAMBAR_KONTOL
@@ -565,7 +565,7 @@ async def kontol(client: Client, message: Message):
     await message.edit(kontol)
 
 
-@bots.on_message(filters.command(["penis", "dick"], "") & filters.me)
+@ubot.on_message(filters.command(["penis", "dick"], "") & filters.me)
 async def titid(client: Client, message: Message):
     emoji = get_text(message)
     titid = MEMES.GAMBAR_TITIT
@@ -574,7 +574,7 @@ async def titid(client: Client, message: Message):
     await message.edit(titid)
 
 
-@bots.on_message(filters.me & filters.command("dino", cmd))
+@ubot.on_message(filters.me & filters.command("dino", cmd))
 async def adadino(client: Client, message: Message):
     typew = await eor(message, "`DIN DINNN.....`")
     await asyncio.sleep(1)
@@ -631,7 +631,7 @@ async def adadino(client: Client, message: Message):
     await typew.edit("`-TAMAT-`")
 
 
-@bots.on_message(filters.command(["sayang", "syg"], cmd) & filters.me)
+@ubot.on_message(filters.command(["sayang", "syg"], cmd) & filters.me)
 async def zeyenk(client: Client, message: Message):
     e = await eor(message, "I LOVEE YOUUU 💕")
     await e.edit("💝💘💓💗")
@@ -659,7 +659,7 @@ async def zeyenk(client: Client, message: Message):
     await e.edit("SAYANG KAMU💞")
 
 
-@bots.on_message(filters.me & filters.command("gabut", cmd))
+@ubot.on_message(filters.me & filters.command("gabut", cmd))
 async def menggabut(client: Client, message: Message):
     e = await eor(message, "`PERNAAHHHHH KAHHH KAUUU MENGIRA`")
     await e.edit("`SEPEEERTIIIII APAAAA BENTUKKKKKKK CINTAAAA`")
@@ -862,7 +862,7 @@ async def menggabut(client: Client, message: Message):
     await e.edit("`GABUT`")
 
 
-@bots.on_message(filters.command(["helikopter", "heli"], cmd) & filters.me)
+@ubot.on_message(filters.command(["helikopter", "heli"], cmd) & filters.me)
 async def helikopter(client: Client, message: Message):
     await eor(
         message,
@@ -885,7 +885,7 @@ async def helikopter(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("tembak", cmd))
+@ubot.on_message(filters.me & filters.command("tembak", cmd))
 async def dornembak(client: Client, message: Message):
     await eor(
         message,
@@ -893,7 +893,7 @@ async def dornembak(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("bundir", cmd))
+@ubot.on_message(filters.me & filters.command("bundir", cmd))
 async def ngebundir(client: Client, message: Message):
     await eor(
         message,
@@ -914,7 +914,7 @@ async def ngebundir(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("awk", cmd))
+@ubot.on_message(filters.me & filters.command("awk", cmd))
 async def awikwok(client: Client, message: Message):
     await eor(
         message,
@@ -926,7 +926,7 @@ async def awikwok(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("y", cmd))
+@ubot.on_message(filters.me & filters.command("y", cmd))
 async def ysaja(client: Client, message: Message):
     await eor(
         message,
@@ -946,7 +946,7 @@ async def ysaja(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("tank", cmd))
+@ubot.on_message(filters.me & filters.command("tank", cmd))
 async def tank(client: Client, message: Message):
     await eor(
         message,
@@ -957,7 +957,7 @@ async def tank(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("babi", cmd))
+@ubot.on_message(filters.me & filters.command("babi", cmd))
 async def babi(client: Client, message: Message):
     await eor(
         message,
@@ -972,7 +972,7 @@ async def babi(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("ajg", cmd))
+@ubot.on_message(filters.me & filters.command("ajg", cmd))
 async def anjg(client: Client, message: Message):
     await eor(
         message,
@@ -985,14 +985,14 @@ async def anjg(client: Client, message: Message):
     )
 
 
-@bots.on_message(filters.me & filters.command("nah", cmd))
+@ubot.on_message(filters.me & filters.command("nah", cmd))
 async def nahlove(client: Client, message: Message):
     typew = await eor(message, "`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`")
     await asyncio.sleep(2)
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
 
 
-@bots.on_message(filters.me & filters.command("santet", cmd))
+@ubot.on_message(filters.me & filters.command("santet", cmd))
 async def santet(client: Client, message: Message):
     typew = await eor(message, "`Mengaktifkan Perintah Santet Online....`")
     await asyncio.sleep(2)
