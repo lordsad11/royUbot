@@ -4,7 +4,7 @@ create by: https://t.me/NorSodikin
 """
 
 
-from miko import *
+from ubot import *
 
 __MODULE__ = "sudo"
 __HELP__ = f"""
