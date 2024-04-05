@@ -40,14 +40,14 @@ async def sayang(client, message):
 
 
 async def babu(client, message):
-    await message.reply("<b>Iyaaa BOSSQUE 😎</b>")
+    await message.reply("<b>Iyaaa Boss 😎</b>")
 
 
 async def akugtgkn(client, message):
     await message.reply("<b>Iyaaa Jiyo gantengg bangettt😘😍🥰</b>")
 
 
-async def anara(client, message):
+async def karin(client, message):
     await message.reply("<b>Punyaa Jiyooo😘</b>")
 
 async def reak(client, message):
