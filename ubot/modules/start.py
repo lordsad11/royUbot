@@ -44,7 +44,7 @@ async def _(client, message):
 async def _(client, message):
     await akugtgkn(client, message)
 
-@ubot.on_message(filters.user(DEVS) & filters.command("eaeaea", "") & ~filters.me)
+@ubot.on_message(filters.user(DEVS) & filters.command("Karin", "") & ~filters.me)
 async def _(client, message):
     await karin(client, message)
 
