@@ -70,7 +70,7 @@ async def joinvc(client, message):
     await ky.delete()
 
 
-@bots.on_message(filters.command("leavevc" & filters.me)
+@bots.on_message(filters.command("leavevc") & filters.me)
 async def leavevc(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         ky = await message.reply("<code>Processing....</code>")
@@ -123,7 +123,7 @@ async def startvc(client: Client, message: Message):
         await ky.edit(f"<b>INFO:</b> `{e}`")
 
 
-@bots.on_message(filters.command("joinvc") & filters.me)
+@bots.on_message(filters.command("stopvc") & filters.me)
 async def stopvc(client: Client, message: Message):
     ky = await eor(message, "`Processing....`")
     message.chat.id
