@@ -28,7 +28,7 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 
-from ubot import *
+from . import *
 
 
 async def get_group_call(
@@ -66,7 +66,7 @@ async def joinvc(client, message):
         f"❏ <b>Berhasil Join Voice Chat</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
     )
     await sleep(1)
-    await client.group_call.set_is_mute(True)
+    await client.group_call.set_is_mute(False)
     await ky.delete()
 
 
