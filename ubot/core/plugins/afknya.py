@@ -1,12 +1,18 @@
-
-
-
 from datetime import datetime
 from asyncio import sleep
 from pyrogram import *
 from pyrogram.types import *
 
 from ubot import *
+
+async def is_afk_(f, client, message):
+    user_id = client.me.id
+    af_k_c = await check_afk(user_id)
+    return bool(af_k_c)
+
+
+is_afk = filters.create(func=is_afk_, name="is_afk_")
+
 
 afk_sanity_check: dict = {}
 afkstr = """
