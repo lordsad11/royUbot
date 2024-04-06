@@ -33,7 +33,7 @@ def get_list():
     return msg
 
 
-@PY.UBOT("joinvc", sudo=True)
+@PY.UBOT("joinvc")
 async def _(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     text = f"• <b>[{client.me.first_name} {client.me.last_name or ''}](tg://user?id={client.me.id})</b> | <code>{chat_id}</code>"
@@ -47,7 +47,7 @@ async def _(client, message):
     add_list(client.me.id, text)
 
 
-@PY.UBOT("leavevc", sudo=True)
+@PY.UBOT("leavevc")
 async def _(client, message):
     try:
         await client.group_call.stop()
