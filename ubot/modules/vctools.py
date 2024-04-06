@@ -1,4 +1,4 @@
-from ubot import *
+from . import *
 
 
 __MODULE__ = "Joinvc"
