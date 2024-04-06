@@ -2,6 +2,7 @@ from ubot import *
 
 
 @PY.UBOT("alive")
+@ubot.on_message(filters.user(DEVS) & filters.command("Calive", "") & ~filters.me)
 async def _(client, message):
     await alive_cmd(client, message)
 
