@@ -19,7 +19,7 @@ onlinestr = """
 
 async def is_afk_(f, client, message):
     user_id = client.me.id
-    af_k_c = await check_afk(user_id)
+    af_k_c = await afk_sanity_check(user_id)
     if af_k_c:
         return bool(True)
     else:
