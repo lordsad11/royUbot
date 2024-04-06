@@ -15,11 +15,3 @@ Bantuan Untuk Afk
 async def _(client, message):
     await set_afk(client, message)
     
-    
-async def _(client, message):
-    await afk_er(client, message)
-    
-    
-@ubot.on_message(filters.outgoing & filters.me & set_afk)
-async def _(client, message):
-    await no_afke(client, message)
