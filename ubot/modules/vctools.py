@@ -11,7 +11,7 @@ __HELP__ = f"""
 ๏ Perintah: <code>{0}joinvc</code>
 ◉ Penjelasan: Untuk bergabung voice chat grup.
 
-๏ Perintah: <code>{cmd}leavevc</code>
+๏ Perintah: <code>{0}leavevc</code>
 ◉ Penjelasan: Untuk meninggalkan voice chat grup.
 """
 
