@@ -11,18 +11,11 @@ Bantuan Untuk Afk
 """
 
 
-@PY.UBOT("afk")
+@PY.UBOT("afk"mo)
 async def _(client, message):
     await set_afk(client, message)
     
     
-@ubot.on_message(
-    is_afk
-    & (filters.mentioned | filters.private)
-    & ~filters.me
-    & ~filters.bot
-    & filters.incoming
-)
 async def _(client, message):
     await afk_er(client, message)
     
