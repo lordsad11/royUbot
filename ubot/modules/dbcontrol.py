@@ -1,8 +1,8 @@
 from ubot import *
 
 
-@PY.BOT("prem", FILTERS.GROUP)
-@PY.UBOT("prem")
+@PY.BOT("ah", FILTERS.GROUP)
+@PY.UBOT("ah")
 async def _(client, message):
     await prem_user(client, message)
 
