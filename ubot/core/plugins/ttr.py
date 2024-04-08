@@ -11,8 +11,8 @@ async def cb_tutor(client, callback_query):
                     InlineKeyboardButton(text="Admin", callback_data="start_admin"),
                 ],
                 [
-                    InlineKeyboardButton(text="Tutorial Ambil API ID", url="https://t.me/loghimikoubot/6"),
-                    InlineKeyboardButton(text="Tutorial Buat Userbot", url="https://t.me/loghimikoubot/7"),
+                    InlineKeyboardButton(text="Tutorial Ambil API ID", url="http://my.telegram.org/auth"),
+                    InlineKeyboardButton(text="Tutorial Buat Userbot", url="https://t.me/gwehnc"),
                 ],
                 [
                     InlineKeyboardButton(text="Kembali", callback_data="start0"),
