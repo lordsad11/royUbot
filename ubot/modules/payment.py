@@ -1,7 +1,7 @@
 from ubot import *
 
 
-@PY.CALLBACK("^confirm")
+@PY.CALLBACK("confirm")
 async def _(client, callback_query):
     await confirm_callback(client, callback_query)
 
