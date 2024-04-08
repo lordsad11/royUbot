@@ -34,7 +34,7 @@ async def profile_command(client, message):
     b = InlineKeyboardMarkup([[InlineKeyboardButton(
       text="Tutup", callback_data="0_cls")]])
     await message.reply_text(f"""
-<b>Uputt-Userbot</b>
+<b>ʀᴇx ᴜsᴇʀʙᴏᴛ</b>
     <b>Status Ubot:</b> <code>{status2}</code>
       <b>Status Pengguna:</b> <i>{status}</i>
       <b>Prefixes :</b> <code>{prefix[0]}</code>
@@ -94,7 +94,7 @@ async def ewdsfgj(client, callback_query):
         )
 
     await callback_query.edit_message_text(f"""
-<b>ᴀɪᴜ ᴜʙᴏᴛ</b>
+<b>ʀᴇx ᴜsᴇʀʙᴏᴛ</b>
     <b>Status Ubot:</b> <code>{status2}</code>
       <b>Status Pengguna:</b> <i>{status}</i>
       <b>Prefixes :</b> <code>{prefix[0]}</code>
