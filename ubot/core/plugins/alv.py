@@ -56,7 +56,7 @@ async def alive_query(client, inline_query):
             else:
                 antipm = "enable"
             msg = f"""
-<b>ᴀɪᴜ ᴜʙᴏᴛ</b>
+<b>ʀᴇx ᴜsᴇʀʙᴏᴛ</b>
     <b>status:</b> {status} 
       <b>dc_id:</b> <code>{my.me.dc_id}</code>
       <b>ping_dc:</b> <code>{str(ping).replace('.', ',')} ms</code>
