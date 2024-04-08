@@ -13,7 +13,7 @@ flood = {}
 flood2 = {}
 
 DEFAULT_TEXT = """
-<b>Saya adalah ᴀɪᴜ ᴜʙᴏᴛ yang menjaga Room Chat Ini . Jangan Spam Atau Anda Akan Diblokir Otomatis.</b>
+<b>Saya adalah Pacar kamu yang menjaga Room Chat Ini . Jangan Spam Atau Anda Akan Diblokir Otomatis.</b>
 """
 
 PM_WARN = """
