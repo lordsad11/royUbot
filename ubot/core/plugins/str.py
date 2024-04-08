@@ -44,11 +44,11 @@ async def babu(client, message):
 
 
 async def akugtgkn(client, message):
-    await message.reply("<b>Iyaaa Jiyo gantengg bangettt😘😍🥰</b>")
+    await message.reply("<b>Iyaaa rex gantengg bangettt😘😍🥰</b>")
 
 
 async def karin(client, message):
-    await message.reply("<b>Punyaa Jiyooo😘</b>")
+    await message.reply("<b>Punyaa rex😘</b>")
 
 async def reak(client, message):
     await client.send_reaction(message.chat.id, message.id, "🔥")
