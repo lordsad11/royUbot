@@ -1,28 +1,28 @@
 from ubot import *
 
 
-@PY.CALLBACK("bahan")
+@PY.CALLBACK("crot")
 async def _(client, callback_query):
     await need_api(client, callback_query)
 
 
-@PY.CALLBACK("bayar_dulu")
+@PY.CALLBACK("bayar")
 async def _(client, callback_query):
     await payment_userbot(client, callback_query)
 
 
-@PY.CALLBACK("add_ubot")
+@PY.CALLBACK("addubot")
 async def _(client, callback_query):
     await bikin_ubot(client, callback_query)
 
 
-@PY.CALLBACK("cek_ubot")
+@PY.CALLBACK("cek")
 @PY.BOT("getubot", FILTERS.SUDO)
 async def _(client, message):
     await cek_ubot(client, message)
 
 
-@PY.CALLBACK("cek_masa_aktif")
+@PY.CALLBACK("cekmasa")
 async def _(client, callback_query):
     await cek_userbot_expired(client, callback_query)
 
