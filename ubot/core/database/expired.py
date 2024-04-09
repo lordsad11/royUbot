@@ -1,6 +1,6 @@
-from Pyroubot.core.database import mongo_client
+from Pyroubot.core.database import db
 
-userEXP = mongo_client["nanubot"]["expired"]
+userEXP = db["nanubot"]["expired"]
 
 
 async def get_expired_date(user_id):
