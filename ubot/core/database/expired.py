@@ -1,4 +1,4 @@
-from Pyroubot.core.database import db
+from ubot.core.database import db
 
 userEXP = db["nanubot"]["expired"]
 
