@@ -1,4 +1,4 @@
-from ubot.core.database import mongo_client
+from Pyroubot.core.database import mongo_client
 
 userEXP = mongo_client["nanubot"]["expired"]
 
